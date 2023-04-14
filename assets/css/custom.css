@@ -63,8 +63,63 @@ body{
     transform: translateX(-50%);
 }
 .banner-img img {
+    top: 38px;
     z-index: 1;
     position: relative;
     clip-path: circle(50% at 50% 36.5%);
-    top: 38px;
+}
+.main-logo-sec{
+    padding-top: 47px;
+    padding-bottom: 43px;
+    border-bottom: 2px solid#f5f5f5;
+
+}
+.logo-con{
+    display: grid;
+    padding: 0 54px;
+    justify-items: center;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+}
+.logo-con div figure{
+    height: 60px;
+}
+.tab-con{
+    padding-top: 180px;
+
+}
+.need-sec-heading{
+    margin-bottom: 30px;
+}
+.need-sec-heading h2{
+    margin-bottom: 30px;
+    font-family: 'Raleway';
+}
+.need-sec-heading p{
+    font-size: 9px;
+    line-height: 12px;
+    margin-bottom: 30px;
+}
+
+.tab-con .nav-tabs{
+        border-radius: 34px;
+        background-color: #f1f3f7;
+        padding: 12px 14px 12px 12px;
+        width: 556px;
+        margin: 0 auto;
+}
+.tab-con .nav-tabs .nav-link{
+    font-size: 14px;
+    font-weight: 600;
+    color: #2a3b7d;
+    border: none;
+}
+.tab-con .nav-tabs .nav-link.active{
+    border-radius: 50px;
+    background-color: #2a3b7d;
+    color: #ffffff;
+    padding: 12px 41px 9px 41px;
+}
+.tab-con .nav-tabs .nav-link:hover{
+    border: none;
 }

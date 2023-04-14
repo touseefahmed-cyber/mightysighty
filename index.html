@@ -81,8 +81,144 @@
     </div>
   </section>
   <!-- BANNER SECTION -->
+  <!-- LOGO SECTION -->
+  <section class="main-logo-sec w-100 float-left">
+    <div class="wrapper">
+      <div class="logo-con align-items-center justify-item-center w-100">
+
+        <div class="logo-item">
+          <figure class="mb-0">
+            <img src="assets/images/logo-sec-img1.png">
+          </figure>
+        </div>
+
+        <div class="logo-item">
+          <figure class="mb-0">
+            <img src="assets/images/logo-sec-img2.png">
+          </figure>
+        </div>
+
+        <div class="logo-item">
+          <figure class="mb-0">
+            <img src="assets/images/logo-sec-img3.png">
+          </figure>
+        </div>
+
+        <div class="logo-item">
+          <figure class="mb-0">
+            <img src="assets/images/logo-sec-img4.png">
+          </figure>
+        </div>
+
+        <div class="logo-item">
+          <figure class="mb-0">
+            <img src="assets/images/logo-sec-img5.png">
+          </figure>
+        </div>
+
+        <div class="logo-item">
+          <figure class="mb-0">
+            <img src="assets/images/logo-sec-img6.png">
+          </figure>
+        </div>
+
+        <div class="logo-item">
+          <figure class="mb-0">
+            <img src="assets/images/logo-sec-img7.png">
+          </figure>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- LOGO SECTION -->
+
+
+  <!-- NEED SECTION -->
+  <section class="tab-con float-left w-100 text-center">
+    <div class="wrapper">
+      <div class="need-sec-heading">
+        <h2 class="primary-color font-extarablod">
+          Find what you need, when you need it.
+        </h2>
+        <p class="secondary-color font-medium">
+          All your assets in one place. Videos, images, documents, logos; in MightySighty you’ll never lose track of what you’ve got.
+        </p>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="store-tab" data-toggle="tab" href="#store" role="tab" aria-controls="store" aria-selected="true">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Search-tab" data-toggle="tab" href="#Search" role="tab" aria-controls="Search" aria-selected="false">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Organise-tab" data-toggle="tab" href="#Organise" role="tab" aria-controls="Organise" aria-selected="false">Organise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Share-tab" data-toggle="tab" href="#Share" role="tab" aria-controls="Share" aria-selected="false">Share</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Collaborate-tab" data-toggle="tab" href="#Collaborate" role="tab" aria-controls="Collaborate" aria-selected="false">Collaborate</a>
+        </li>
+      </ul>
+      
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="store" role="tabpanel" aria-labelledby="store-tab">
+          <figure class="mb-0">
+            <img src="assets/images/tab-img-1.png" alt="">
+          </figure>
+      
+        </div>
+        <div class="tab-pane fade" id="Search" role="tabpanel" aria-labelledby="Search-tab">
+          <figure class="mb-0">
+            <img src="assets/images/tab-img-2.png" alt="">
+          </figure>
+      
+        </div>
+        <div class="tab-pane fade" id="Organise" role="tabpanel" aria-labelledby="Organise-tab">
+          <figure class="mb-0">
+            <img src="assets/images/tab-img-3.png" alt="">
+          </figure>
+      
+        </div>
+        <div class="tab-pane fade" id="Share" role="tabpanel" aria-labelledby="Share-tab">
+          <figure class="mb-0">
+            <img src="assets/images/tab-img-4.png" alt="">
+          </figure>
+        </div>
+        <div class="tab-pane fade" id="Collaborate" role="tabpanel" aria-labelledby="Collaborate-tab">
+          <figure class="mb-0">
+            <img src="assets/images/tab-img-5.png" alt="">
+          </figure>
+      
+        </div>
+      </div>
+      <div class="input-group mb-3 group-end">
+        <a class="btn btn-danger btnPrevious">Previous</a>
+        <a class="btn btn-success btnNext">Submit</a>
+      </div>
+    </div>
+  </section>
+  <!-- NEED SECTION -->
+
+
 <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('.btnNext').click(function() {
+    $('.nav-tabs .active').parent().next('li').find('a').trigger('click');
+  });
+
+  $('.btnPrevious').click(function() {
+    $('.nav-tabs .active').parent().prev('li').find('a').trigger('click');
+  });
+});
+
+</script>
 </body>
 </html>
