@@ -184,10 +184,129 @@ body{
 .tab-con .nav-tabs .nav-link:hover{
     border: none;
 }
+/*INFO SECTION*/
 .info-sec{
     padding-top: 95px;
     padding-bottom: 175px;
 }
+.info-sec .section-heading{
+    margin-bottom: 85px;
+}
+.info-inner-con{
+    margin: 0 126px;
+    overflow: hidden;
+    border-radius: 24px;
+    padding: 53px 101px 64px 78px;
+}
+.info-form-con{
+    margin-bottom: 34px;
+}
+.info-inner-con:before{
+    top: -19px;
+    left: -232px;
+    content: "";
+    width: 722px;
+    height: 722px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #67d3ba;
+}
+.info-inner-con:after{
+    top: 28px;
+    left: 40%;
+    content: "";
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(103 211 186 / 20%);
+}
+.round-ball{
+    display: contents;
+}
+.round-ball:before{
+    top: 9px;
+    left: 29%;
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(103 211 186 / 20%);
+}
+.info-inner-left{
+    z-index: 1;
+    width: 38.3%;
+    position: relative;
+    border-radius: 14px;
+    padding: 38px 36px 31px 37px;
+}
+.info-inner-left h5{
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+}
+.info-inner-right{
+    width: 43%;
+}
+.info-inner-heading{
+    margin-bottom: 27px;
+}
+.info-inner-heading span{
+    margin-bottom: 12px;
+    margin-left: 2px;
+}
+.info-inner-heading h4{
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+}
+.account-info{
+    width: 95.6%;
+    position: relative;
+    border-radius: 16px;
+    background-color: #f7f7f7;
+    padding: 23px 33px 25px 37px;
+}
+.account-info:before{
+    top: 10px;
+    left: 29%;
+    width: 70px;
+    height: 70px;
+    transform: rotate(315deg);
+    content: "";
+    position: absolute;
+    border-right: 7px solid #ffff;
+    border-bottom: 7px solid #ffffff;
+}
+.account-info span{
+    font-size: 11px;
+    line-height: 12px;
+    margin-bottom: 9px;
+    letter-spacing: 0.8px;
+    margin-left: 5px;
+}
+.account-info small{
+    font-size: 27px;
+    line-height: 20px;
+}
+/*second con*/
+.info-second-con{
+    margin: 0 126px;
+}
+.info-second-con .info-items{
+    padding: 65px 58px 70px 75px;
+    border-radius: 24px;
+}
+/*INFO SECTION*/
+/*TEXT AND IMG BLOCK*/
+.text-img-sec{
+    padding-top: 128px;
+    padding-bottom: 30px;
+}
+/*TEXT AND IMG BLOCK*/
+
+
 .solution-sec .section-heading span{
     margin-bottom: 13px;
 }

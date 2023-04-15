@@ -57,14 +57,23 @@ h5{
 .secondary-color{
     color: #434343;
 }
+.bg-f6f6f9{
+    background-color: #f6f6f9;
+}
+.color-66d1b8{
+    color: #66d1b8;
+}
 .color-2a3b7d{
     color: #2a3b7d;
 }
-.bg-1d2b5f{
-    background-color: #1d2b5f;
+.color-263672{
+    color: #263672;
 }
 .color-67d3ba{
     color: #67d3ba;
+}
+.bg-1d2b5f{
+    background-color: #1d2b5f;
 }
 .font-medium{
     font-weight: 500;
