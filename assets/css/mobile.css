@@ -78,6 +78,12 @@
     
 }
 @media only screen and (max-width: 1199px) {
+    .banner-txt .generic-btn a:first-child {
+        padding: 22px 36px;
+    }
+    .banner-txt .generic-btn a:last-child {
+        padding: 22px 50px 22px 49px;
+    }
     .header-con .navbar-light .navbar-nav .nav-item {
         padding: 0 12px;
     }
@@ -253,6 +259,13 @@
     
 }
 @media only screen and (max-width: 991px) {
+    .banner-txt .generic-btn a:first-child {
+        padding: 18px 24px;
+    }
+    .banner-txt .generic-btn a:last-child {
+        padding: 18px 37px 18px 38px;
+        letter-spacing: 0.4px;
+    }
     .veiw-list .nav-pills .nav-link {
         padding: 16px 14px;
     }
@@ -260,10 +273,10 @@
         width: 400px;
     }
     .login-btn a {
-        margin-left: 15px;
+        margin-left: 16px;
     }
     .header-con .navbar-light .navbar-nav .nav-item {
-        padding: 8px 12px;
+        padding: 8px 16px;
     }
     .nav-btn {
         margin-bottom: 16px;
@@ -354,6 +367,7 @@
     .navbar-collapse.collapse,.navbar-collapse.collapsing{
         width: 100%;
         right: 0;
+        border-radius: 12px;
         top: 100%;
         position: absolute;
         background: #fff;
@@ -566,6 +580,12 @@
     }
 }
 @media only screen and (max-width: 767px) {
+    .banner-txt .generic-btn a:first-child {
+        padding: 16px 19px;
+    }
+    .banner-txt .generic-btn a:last-child {
+        padding: 16px 32px 16px 33px;
+    }
     .info-inner-heading h4 {
         line-height: 24px;
     }
@@ -765,6 +785,22 @@
     }
 }
 @media only screen and (max-width: 575px){
+    .footer-con {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .banner-txt .generic-btn a:first-child {
+        padding: 13px 13px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    body {
+        font-size: 14px;
+    }
+    .banner-txt .generic-btn a:last-child {
+        padding: 13px 22px;
+        font-size: 14px;
+    }
     .navbar-brand figure img {
         width: 200px;
     }
@@ -848,8 +884,12 @@
     h2 {
         font-size: 25px;
     }
+    .medium-heading {
+        font-size: 14px;
+        line-height: 24px;
+    }
     .tab-con .nav-tabs {
-        margin: 0 auto 50px;
+        margin: 0 auto 40px;
     }
     .info-form-con .section-heading p br{
         display: none;
@@ -913,7 +953,7 @@
         color: #385360;
     }
     .info-inner-left {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     .round-ball:before{
         left: 63%;
@@ -951,9 +991,7 @@
         height: 80px;
     }
     .info-inner-heading {
-        margin-bottom: 20px;
-        /* z-index: 10;
-        position: relative; */
+        margin-bottom: 15px;
     }
     .term2-small-round {
         left: 10px;
@@ -975,7 +1013,7 @@
         top: 10px;
     }
     .pricing-table-title h3 {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 28px;
     }
     .info-sec {
@@ -985,8 +1023,8 @@
         font-size: 13px;
     }
     .cta-content .cta-buttons a:first-child, .cta-content .cta-buttons a:last-child {
-        padding: 10px 15px;
-        width: 80%;
+        padding: 7px 15px;
+        width: 69%;
     }
     .cta-section {
         padding-top: 70px;
@@ -996,14 +1034,24 @@
         margin-bottom: 10px;
         margin-right: 0;
     }
+    .footer-content {
+        gap: 5px;
+    }
     .footer-right-con li:last-child {
         padding-left: 0;
         width: 100%;
         text-align: center;
-        margin-top: 15px;
+        margin-top: 10px;
     }
     .pricing-table-list {
         display: none;
+    }
+    .pricing-btn a {
+        width: 105px;
+        padding: 9px 22px;
+    }
+    .generic-btn a {
+        font-size: 14px;
     }
     .pricing-table-item ul li::before {
         content: attr(data-label);
@@ -1013,8 +1061,20 @@
         position: relative;
         top: 3px;
         color: #4e4e4e;
+        font-size: 12px;
     }
     .pricing-table-item {
         padding: 26px 15px;
+    }
+    .testimonial-text p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .testimonial-text img{
+        width:150px;
+    }
+    .pricing-table-item ul li {
+        text-align: right;
     }
 } 
