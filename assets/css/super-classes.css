@@ -95,12 +95,12 @@ h5{
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
-    padding: 17px 26px;
+    padding: 17px 26px 17px 23px;
     border-radius: 50px;
     display: inline-block;
     background: #2a3b7d;
     text-decoration: none;
-    letter-spacing: 1px;
+
 }
 .secondary-btn a{
     display: inline-block;

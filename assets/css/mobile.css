@@ -14,6 +14,10 @@
     }
     .banner-txt p {
         margin-bottom: 30px;
+        margin-left: 0;
+    }
+    .tab-con .input-group{
+        padding: 0;
     }
     .banner-txt .generic-btn a {
         padding: 20px 36px;
@@ -177,10 +181,10 @@
         padding-top: 280px;
         padding-bottom: 120px;
     }
-    .veiw-list .tab-content {
+    .veiw-list .tab-content .tab-pane{
         width: 466px;
     }
-    .veiw-list::after {
+    .veiw-list .tab-content::after {
         top: 26px;
         width: 400px;
         height: 400px;
@@ -194,12 +198,13 @@
     }
     .veiw-list #v-pills-tab {
         right: 17px;
+        box-shadow: 0 0 45px 6px rgb(28 29 35 / 39%);
     }
     .veiw-medium-round {
         width: 150px;
         height: 150px;
     }
-    .veiw-list .tab-content {
+    .veiw-list .tab-content .tab-pane{
         box-shadow: -8px -1px 20px rgb(28 29 35 / 39%);
     }
     .solution-sec .section-heading {
@@ -248,6 +253,21 @@
     
 }
 @media only screen and (max-width: 991px) {
+    .veiw-list .nav-pills .nav-link {
+        padding: 16px 14px;
+    }
+    .veiw-list .tab-content img {
+        width: 400px;
+    }
+    .login-btn a {
+        margin-left: 15px;
+    }
+    .header-con .navbar-light .navbar-nav .nav-item {
+        padding: 8px 12px;
+    }
+    .nav-btn {
+        margin-bottom: 16px;
+    }
     .banner-img img {
         width: 500px;
     }
@@ -264,6 +284,7 @@
     .main-logo-sec {
         padding-top: 30px;
         padding-bottom: 30px;
+        overflow: auto;
     }
     h1 {
         font-size: 32px;
@@ -333,14 +354,16 @@
     .navbar-collapse.collapse,.navbar-collapse.collapsing{
         width: 100%;
         right: 0;
-        top:100%;
+        top: 100%;
         position: absolute;
-        background: rgba(0,0,0,0.8);
+        background: #fff;
+        box-shadow: 2px 2px 18px rgb(28 29 35 / 39%);
     }
     .logo-con {
-        grid-template-columns: auto auto auto auto;
-        grid-auto-flow: row;
-        gap: 15px;
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        gap: 138px;
+        padding-left: 71px;
     }
     .tab-con {
         padding-top: 70px;
@@ -447,15 +470,16 @@
     .text-img-sec,.user-con{
         text-align: center;
     }
-    .veiw-list .tab-content {
+    .veiw-list .tab-content .tab-pane {
         width: 450px;
         margin: 0 auto;
     }
-    .veiw-list::after {
-        width: 400px;
-        height: 400px;
+    .veiw-list .tab-content::after {
+        width: 350px;
+        height: 350px;
         left: 50%;
         transform: translateX(-50%);
+        top: 36px;
     }
     .user-con {
         padding-bottom: 70px;
@@ -494,12 +518,15 @@
     .section-heading {
         width: 100%;
     }
-    .veiw-list.position-relative {
-        margin-bottom: 134px;
+    .veiw-list {
+        margin-bottom: 100px;
     }
     .testimonial-sec {
         padding-top: 70px;
         padding-bottom: 70px;
+    }
+    .testimonial-sec .carousel-control-next, .testimonial-sec .carousel-control-prev {
+        top: 24%;
     }
     .testimonial-sec .carousel-control-next span, 
     .testimonial-sec .carousel-control-prev span {
@@ -539,17 +566,46 @@
     }
 }
 @media only screen and (max-width: 767px) {
-.logo-con {
-    grid-template-columns: auto;
-    grid-auto-flow: coloum;
-    gap: 20px;
-    overflow: scroll;
-}
-    .logo-con figure img {
-        width: 70px;
+    .info-inner-heading h4 {
+        line-height: 24px;
+    }
+    .term-medium-round {
+        width: 100px;
+        height: 100px;
+        bottom: 96px;
+    }
+    .user-form a {
+        padding: 9px 16px 8px;
+    }
+    .user-form ul {
+        margin-bottom: 16px;
+    }
+    h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .tab-con-heading {
+        margin-bottom: 24px;
+    }
+    .banner-con .row {
+        padding: 0 0;
+    }
+    .tab-con-heading p {
+        max-width: 100%;
     }
     .logo-con figure img {
-        width: 70px;
+        width: 88px;
+    }
+    .logo-con figure {
+        padding: 0;
+    }
+    .logo-con {
+        gap: 100px;
+        padding-left: 44px;
     }
     .tab-con {
         padding-top: 50px;
@@ -568,15 +624,26 @@
         padding: 0;
     }
     .tab-con .tab-pane img{
+        padding: 12px;
         box-shadow: 12px 14px 15px rgb(28 29 35 / 39%);
     }
     .info-inner-right {
         width: 52%;
         z-index: 1;
+        position: relative;
+    }
+    .info-sec .section-heading {
+        margin-bottom: 29px;
     }
     .info-inner-con:before {
         top: -28px;
         left: -333px;
+    }
+    .veiw-detalis span {
+        padding: 0;
+    }
+    .input-radio {
+        padding: 6px 6px;
     }
     .info-inner-con:after {
         top: 16px;
@@ -626,6 +693,18 @@
    .info-items img {
     bottom: 0;
     }
+    h3 {
+        font-size: 24px;
+    }
+    .cta-content h3 {
+        margin-bottom: 24px;
+    }
+    .footer-content {
+        gap: 4px;
+    }
+    .solution-sec .section-heading {
+        margin-bottom: 40px;
+    }
     .info-second-con .account-info:before {
         top: 6px;
         left: 31%;
@@ -649,10 +728,6 @@
     }
     .text-img img {
         width: 380px;
-    }
-    .veiw-list::after {
-        width: 380px;
-        height: 380px;
     }
     .user-con {
         padding-bottom: 40px;
@@ -689,17 +764,78 @@
         padding: 10px 26px;
     }
 }
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 575px){
+    .navbar-brand figure img {
+        width: 200px;
+    }
+    .banner-con {
+        padding-bottom: 60px;
+    }
+    .separator-bottom:after {
+        border-radius: 321% / 157%;
+    }
+    .separator-top:after {
+        border-radius: 321% / 157%;
+    }
+    .veiw-list .tab-content img {
+        width: 100%;
+    }
+    .veiw-list .nav-pills .nav-link {
+        padding: 16px 14px;
+        width: 50%;
+    }
+    .veiw-list .nav-pills .nav-link:first-child {
+        border-radius: 12px 0 0 0;
+    }
+    .veiw-list .nav-pills .nav-link:nth-child(2){
+        border-radius: 0 12px 0 0;
+    }
+    .veiw-list .nav-pills .nav-link:nth-child(3){
+        border-radius: 0 0 0 12px;
+    }
+    .veiw-list .nav-pills .nav-link:last-child{
+        border-radius: 0 0 12px 0;
+    }
+    .veiw-list .nav-pills .nav-link i {
+        font-size: 16px;
+        padding-right: 8px;
+    }
+    .user-con .section-heading .generic-btn a {
+        padding: 15px 30px;
+        margin-bottom: 0;
+    }
+    .solution-sec .section-heading {
+        margin-bottom: 30px;
+    }
+    .tab-con .tab-pane {
+        width: 100%;
+    }
+    .tab-con .tab-pane img {
+        border-radius: 12px;
+        box-shadow: 5px 5px 15px rgb(28 29 35 / 39%);
+    }
+    .tab-con .nav-tabs {
+        border-radius: 15px;
+        padding: 11px 12px 9px;
+        justify-content: flex-start;
+    }
+    .banner-txt .generic-btn a {
+        padding: 14px 40px;
+    }
+    h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
     .banner-img img {
         width: 100%;
     }
     .generic-btn a:first-child{
         margin-bottom: 10px;
+        padding: 14px 25px;
     }
     .large-bubble {
-        width: 130px;
+        width: 120px;
         height: 120px;
-        top: 0;
         left: 0px;
     }
     .tab-con .input-group{
@@ -710,7 +846,10 @@
         display: inline-block;
     }
     h2 {
-        font-size: 28px;
+        font-size: 25px;
+    }
+    .tab-con .nav-tabs {
+        margin: 0 auto 50px;
     }
     .info-form-con .section-heading p br{
         display: none;
@@ -721,28 +860,161 @@
     .solution-boxes ul {
         grid-template-columns: 100%;
     }
-    .veiw-list .tab-content {
+    .veiw-list .tab-content .tab-pane {
         width: 100%;
     }
     .veiw-small-round {
         top: 0px;
         left: 25px;
     }
-    .veiw-list::after {
+    .veiw-list .tab-content::after {
         width: 300px;
         height: 300px;
+        top: 50%;
+        transform: translate(-50%, -13%);
     }
     .veiw-medium-round {
         width: 100px;
         height: 100px;
-        bottom: -127px;
+        bottom: -76px;
+    }
+    .veiw-list #v-pills-tab {
+        right: 0;
+        width: 100%;
+        bottom: inherit;
+        position: relative;
+        flex-direction: row !important;
     }
     .text-img img {
         width: 100%;
     }
     .info-inner-left{
         width: 100%;
+        box-shadow: -3px 4px 11px rgb(0 0 0 / 66%);
     }
-    
-
+    .tab-con .nav-tabs .nav-item{
+        width: 33%;
+    }
+    .tab-con .nav-tabs .nav-link.active {
+        padding: 7px 15px 6px 15px;
+    }
+    .info-inner-con {
+        flex-direction: column;
+        padding: 25px 15px 25px;
+    }
+    .info-inner-right{
+        width: 100%;
+    }
+    .veiw-detalis span{
+        font-size: 8px;
+    }
+    .info-inner-heading span{
+        margin-left: 0;
+        color: #385360;
+    }
+    .info-inner-left {
+        margin-bottom: 20px;
+    }
+    .round-ball:before{
+        left: 63%;
+        top: 29px;
+    }
+    .info-inner-con:after {
+        top: 75%;
+        left: 72%;
+        width: 80px;
+        height: 80px;
+    }
+    .info-inner-con:before {
+        top: -69px;
+        left: -349px;
+    }
+    .term-small-round{
+        left: 10px;
+        bottom: 186px;
+    }
+    .info-items .account-info {
+        margin-bottom: 28px;
+        z-index: 10;
+        position: relative;
+    }
+    .term-medium-round {
+        top: 0;
+        right: -35px;
+        width: 80px;
+        height: 80px;
+    }
+    .term2-medium-round{
+        top: 22px;
+        right: -29px;
+        width: 80px;
+        height: 80px;
+    }
+    .info-inner-heading {
+        margin-bottom: 20px;
+        /* z-index: 10;
+        position: relative; */
+    }
+    .term2-small-round {
+        left: 10px;
+        bottom: 270px;
+    }
+    .info-items .account-info{
+        margin-bottom: 50px;
+    }
+    .info-items2 figure img{
+        z-index: 3;
+        position: relative;
+    }
+    .price-medium-round {
+        width: 80px;
+        height: 80px;
+    }
+    .price-small-round {
+        right: 84px;
+        top: 10px;
+    }
+    .pricing-table-title h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .info-sec {
+        padding-bottom: 70px;
+    }
+    .footer-right-con li a{
+        font-size: 13px;
+    }
+    .cta-content .cta-buttons a:first-child, .cta-content .cta-buttons a:last-child {
+        padding: 10px 15px;
+        width: 80%;
+    }
+    .cta-section {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+    .cta-content .cta-buttons a:first-child {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .footer-right-con li:last-child {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .pricing-table-list {
+        display: none;
+    }
+    .pricing-table-item ul li::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        top: 3px;
+        color: #4e4e4e;
+    }
+    .pricing-table-item {
+        padding: 26px 15px;
+    }
 } 

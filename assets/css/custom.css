@@ -20,19 +20,21 @@ body{
 .login-btn a{
     font-weight: 600;
     color: #2a3b7d;
-    margin-right: 20px;
+    margin-right: 18px;
     text-decoration: none;
 }
 .login-btn a i{
     padding-left: 4px;
 }
 .banner-txt h1{
-    margin-bottom: 31px;
+    margin-bottom: 35px;
+    letter-spacing: -0.6px;
 }
 .banner-txt p {
     max-width: 76%;
+    margin-left: 4px;
     letter-spacing: 1px;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
 }
 .separator-bottom{
     bottom: 0;
@@ -102,8 +104,14 @@ body{
 .banner-con .row{
     padding: 0 32px;
 }
-.banner-txt .generic-btn a{
-    padding: 24px 48px 24px 49px;
+.banner-txt .generic-btn a:first-child{
+    padding: 24px 56px 25px 49px;
+    letter-spacing: 0.4px;
+    margin-right: 4px;
+}
+.banner-txt .generic-btn a:last-child{
+    padding: 24px 62px 25px 60px;
+    letter-spacing: 0.4px;
 }
 .generic-btn .transparent-btn {
     color: #2a3b7d;
@@ -115,7 +123,7 @@ body{
     overflow: hidden;
     padding-top: 137px;
     position: relative;
-    padding-bottom: 120px;
+    padding-bottom: 104px;
     background: #ecf9f6;
 }
 .banner-img img{
@@ -138,21 +146,21 @@ body{
     height: 60px;
 }
 .tab-con{
-    padding-top: 176px;
+    padding-top: 169px;
     padding-bottom: 95px;
 }
 .tab-con-heading{
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
-.tab-con-heading h2{
+.tab-con-heading h2 {
     margin-bottom: 24px;
-    font-family: 'Raleway';
+    letter-spacing: 0.8px;
 }
-.tab-con-heading p{
-    max-width: 38%;
+.tab-con-heading p {
+    max-width: 39%;
     margin: 0 auto;
-    line-height: 26px;
-    letter-spacing: 0.5px;
+    line-height: 25px;
+    letter-spacing: 0.6px;
 }
 .tab-conc-heading p{
     font-size: 9px;
@@ -162,11 +170,12 @@ body{
 .tab-con .nav-tabs {
     width: 563px;
     border-bottom: 0;
-    margin: 0 auto 50px;
+    margin: 0 auto 64px;
     border-radius: 34px;
-    padding: 11px 4px 9px;
+    padding: 12px 4px 12px;
     background-color: #f1f3f7;
     justify-content: space-around;
+    align-items: center;
 }
 .tab-con .nav-tabs .nav-link{
     border: none;
@@ -190,7 +199,7 @@ body{
     padding-bottom: 167px;
 }
 .info-sec .section-heading{
-    margin-bottom: 85px;
+    margin-bottom: 76px;
 }
 .info-inner-con{
     overflow: hidden;
@@ -199,6 +208,9 @@ body{
 }
 .info-form-con{
     margin-bottom: 34px;
+}
+.info-form-con .section-heading .large-heading{
+    letter-spacing: -0.2px;
 }
 .info-inner-con:before{
     top: -19px;
@@ -238,13 +250,14 @@ body{
     width: 39.3%;
     position: relative;
     border-radius: 14px;
-    padding: 38px 36px 31px 37px;
+    padding: 34px 36px 28px 35px;
     box-shadow: 27px 27px 62px rgb(0 0 0 / 66%);
 }
 .info-inner-left h5{
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 1px;
+    margin-bottom: 18px;
 }
 .info-inner-right{
     width: 43%;
@@ -259,10 +272,12 @@ body{
 .info-inner-heading h4{
     font-size: 26px;
     line-height: 32px;
+    margin-bottom: 7px;
     letter-spacing: 0.3px;
 }
 .account-info{
     width: 95.6%;
+    overflow: hidden;
     position: relative;
     border-radius: 16px;
     background-color: #f7f7f7;
@@ -362,7 +377,7 @@ body{
 }
 .testimonial-sec .carousel-control-next,
 .testimonial-sec .carousel-control-prev {
-    top: 50%;
+    top: 25%;
     opacity: 1;
     width: auto;
     height: 49px;
@@ -460,8 +475,9 @@ body{
     font-size: 9px;
     color: #70c8b4;
     display: block;
-    letter-spacing: 0.3px;
     line-height: 9px;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
 }
 .input-field{
     margin-bottom: 10px;
@@ -487,7 +503,7 @@ body{
     border: 2px solid #e8e8e8;
     align-items: center;
     margin-bottom: 7px;
-    
+    border-radius: 5px;
 }
 .input-radio {
     display: flex;
@@ -524,9 +540,9 @@ body{
     width: 100%;
     height: 29px;
 }
-.cancle-btn{
+.cancle-btn {
     float: left;
-    width: 48.4%;
+    width: 47.5%;
 }
 .cancle-btn a{
     color: #263672;
@@ -536,7 +552,7 @@ body{
 .add-btn{
     float: left;
     width: 48.4%;
-    margin-left: 8px;
+    margin-left: 11px;
 }
 .add-btn a{
     color: #fff;
@@ -544,7 +560,7 @@ body{
     background: #263672;
 }
 .user-form ul{
-    margin-bottom: 36px;
+    margin-bottom: 29px;
 }
 .info-items{
     position: relative;
@@ -770,7 +786,7 @@ body{
 .section-heading{
     width: 79%;
 }
-.veiw-list::after{
+.veiw-list .tab-content::after{
     content: "";
     background: #5ab8a2;
     width: 515px;
@@ -781,7 +797,7 @@ body{
     z-index: -1;
     border-radius: 50%;
 }
-.veiw-list .tab-content {
+.veiw-list .tab-content .tab-pane {
     background: #fff;
     padding: 15px;
     box-shadow: 26px 26px 45px rgb(28 29 35 / 39%);
@@ -855,8 +871,9 @@ body{
 .tab-con .input-group{
     justify-content: space-between;
     position: absolute;
-    top: 50%;
+    top: 38.4%;
     transform: translateY(-50%);
+    padding: 0 25px;
 }
 .tab-con .input-group a i{
     color: #2a3b7d;
@@ -876,6 +893,9 @@ body{
     border-radius: 37px;
 }
 .tab-con .tab-pane {
-    width: 80.7%;
+    width: 81.2%;
     margin: 0 auto;
+}
+.pricing-table-list{
+    padding-top: 40px;
 }
